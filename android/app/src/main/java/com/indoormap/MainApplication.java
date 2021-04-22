@@ -11,6 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import com.viromedia.bridge.ReactViroPackage;
+import androidx.multidex.MultiDexApplication;
 
 public class MainApplication extends Application implements ReactApplication {
 

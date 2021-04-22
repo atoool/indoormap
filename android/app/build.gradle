@@ -190,7 +190,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
-
+    implementation 'androidx.multidex:multidex:2.0.1'
   implementation project(':gvr_common')
   implementation project(':arcore_client')
   implementation project(path: ':react_viro')
