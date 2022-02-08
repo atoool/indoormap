@@ -21,7 +21,7 @@ const CreatePath = ({navigation}) => {
     const temp = await getCurrentLoc().catch(e => {});
     temp && setPath([...path, temp]);
   };
-  // useGeolocation(path, onSetPath, start);
+
   const onSavePath = async () => {
     if (!dest || dest === '') {
       // eslint-disable-next-line no-alert

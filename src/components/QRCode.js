@@ -21,8 +21,12 @@ const QRCode = ({onScan}) => {
         buttonPositive: 'Ok',
         buttonNegative: 'Cancel',
       }}
-      onBarCodeRead={e => {
-        onScan(e.data);
+      onGoogleVisionBarcodesDetected={({barcodes}) => {
+        if (barcodes.length > 0) {
+          if (barcodes[0].type === RNCamera.Constants.BarCodeType.qr) {
+            onScan(barcodes[0].data);
+          }
+        }
       }}>
       <BarcodeMask />
     </RNCamera>

@@ -7,7 +7,7 @@ import {Alert, SafeAreaView, StyleSheet} from 'react-native';
 import {Colors} from '../../styles';
 import useServerUpdate from '../../hooks/useServerUpdate';
 
-const AR = ({navigation}) => {
+const ARSelect = ({navigation}) => {
   const defaultSelect = constants.defaultSelect;
 
   const [loading, setLoading] = useState(false);
@@ -88,4 +88,4 @@ const styles = StyleSheet.create({
     borderTopColor: Colors.secondaryGray,
   },
 });
-export default AR;
+export default ARSelect;

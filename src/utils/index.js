@@ -4,6 +4,7 @@ import {lngLatToMerc, lngLatToWorld} from './lngLatConversion';
 import {buildARCoords} from './buildARCoords';
 import getCurrentLoc from './getCurrentLoc';
 import {distanceBetweenPoints} from './distanceBetweenPoints';
+import {Toast} from './Toast';
 export {
   storeData,
   getData,
@@ -14,4 +15,5 @@ export {
   buildARCoords,
   getCurrentLoc,
   distanceBetweenPoints,
+  Toast,
 };

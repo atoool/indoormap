@@ -19,7 +19,9 @@ const getCurrentLoc = () => {
         showLocationDialog: true,
         forceRequestLocation: true,
         accuracy: {android: 'high'},
-        maximumAge: 0,
+        maximumAge: 10000,
+        timeout: 15000,
+        distanceFilter: 1,
       },
     );
   });

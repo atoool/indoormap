@@ -1,6 +1,6 @@
 import Home from './home/Home';
 import CreatePath from './createPath/CreatePath';
-import AR from './AR/AR';
-import ARScene from './AR/js/ARScene';
+import ARSelect from './AR/ARSelect';
+import ARScene from './AR/ARScene';
 
-export {Home, CreatePath, AR, ARScene};
+export {Home, CreatePath, ARSelect, ARScene};
